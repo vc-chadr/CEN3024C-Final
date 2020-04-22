@@ -25,7 +25,9 @@ This project covered the following topics
 ### Screenshot
 
 Running project from a JAR file (see WordOccurrencesDB.java for hard-coded database settings)
+
 ![Screenshot](img/screenshot-jar.png)
 
 Application passing all JUnit tests
+
 ![Screenshot](img/screenshot-junit.png)
