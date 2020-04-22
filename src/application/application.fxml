@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ApplicationController">
+   <children>
+      <HBox prefHeight="40.0" prefWidth="600.0" spacing="25.0">
+         <children>
+            <Label prefHeight="23.0" prefWidth="56.0" text="Filename:">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textFilename" prefHeight="25.0" prefWidth="241.0" />
+            <Button mnemonicParsing="false" onAction="#clickBrowse" text="Browse" />
+            <Button mnemonicParsing="false" onAction="#clickGo" text="Calculate">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox fx:id="wordDisplayContainer" layoutX="10.0" layoutY="110.0" prefHeight="480.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="363.0" prefWidth="223.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="24.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Top 20 Words" />
+                     </children>
+                  </HBox>
+                  <ListView fx:id="wordListSummary" prefHeight="553.0" prefWidth="223.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
